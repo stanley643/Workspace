@@ -16,7 +16,7 @@ def post_detail(request, id):
        # raise Http404('No Post found.')
     post = get_object_or_404(Post,
                              id=id,
-                             status=Post.Status.p)
+                             status=Post.Status.PUBLISHED)
     return render(request,
                   'blog/post/detail.html',
                   {'post': post})
