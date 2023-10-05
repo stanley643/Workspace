@@ -28,6 +28,8 @@ class Post(models.Model):
                               choices=Status.choices,
                               default=Status.DRAFT
     )
+    objects = models.Manager() # The default manager
+    published = PublishedManager() #Our custom manager
 
 
     class Meta:
