@@ -5,7 +5,7 @@
 int main()
 {
 	pid_t my_ppid;
-	my_ppid = get_ppid; 
+	my_ppid = getppid(); 
 
 	printf("ppid is: %d\n", my_ppid);
 	return 0;
