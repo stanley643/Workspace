@@ -16,3 +16,8 @@ def profile():
 @views.route("/json")
 def get_json():
     return jsonify({'name': 'Stan', 'coolness': 10})
+
+@views.route("/data")
+def get_data():
+    data = request.json
+    return jsonify(data)
