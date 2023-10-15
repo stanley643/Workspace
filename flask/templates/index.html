@@ -6,9 +6,12 @@
     <title>Home</title>
 </head>
 <body>
+    {% block content %}
     <div><h1>Home Page</h1>
         <p>Hello {{ name }}</p>
     </div>
+    {% endblock %}
+    
 
     <script type="text/javascript" src="{{ {{url_for('static', filename='index.js')}}}}">
         
