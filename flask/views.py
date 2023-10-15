@@ -15,4 +15,4 @@ def profile():
 
 @views.route("/json")
 def get_json():
-    return 
+    return jsonify({'name': 'Stan', 'coolness': 10})
