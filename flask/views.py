@@ -13,15 +13,18 @@ def profile():
     name = args.get('name')
     return render_template("index.html", name=name)
 
+#returning json instead of html
 @views.route("/json")
 def get_json():
     return jsonify({'name': 'Stan', 'coolness': 10})
 
+#getting data 
 @views.route("/data")
 def get_data():
     data = request.json
     return jsonify(data)
 
+#redirect
 @views.route("/go-to-home")
 def go_to_home():
     return redirect(url_for("views.get_json"))
