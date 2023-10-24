@@ -20,7 +20,7 @@ unsigned int hash(char *name)
 	for (int i=0; i<length; i++)
 	{
 		hash_value += name[i];
-		hash_value = hash_value * name[i];
+		hash_value = (hash_value * name[i] % TABLE_SIZE);
 	}
 	return hash_value;
 }
