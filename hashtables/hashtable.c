@@ -44,6 +44,8 @@ void print_table()
 		else{
 			printf("\t%i\t%s\n", hash_table[i]->name);
 		}
+	}
+}
 int main() 
 {
 	init_hash_table();
