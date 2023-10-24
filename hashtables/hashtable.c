@@ -13,7 +13,7 @@ typedef struct {
 
 }person;
 
-usigned int hash(char *name)
+unsigned int hash(char *name)
 {
 	return 5;
 }
