@@ -15,7 +15,13 @@ typedef struct {
 
 unsigned int hash(char *name)
 {
-	return 5;
+	int length = strnlen(name, MAX_NAME);
+	unsigned int hash_value = 0;
+	for (int i=0; i<length; i++)
+	{
+		hash_value += name[i];
+	}
+	return hash_value;
 }
 
 int main() 
