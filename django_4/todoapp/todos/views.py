@@ -6,4 +6,4 @@ def home(request):
 
 def todo(request):
     item = todos.objects.all()
-    return render(request, 'todos/index.html', {'todos':item})
+    return render(request, 'todos/index.html', {'todo':item})
