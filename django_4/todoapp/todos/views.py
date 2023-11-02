@@ -4,6 +4,6 @@ from .models import todos
 def home(request):
     return HttpResponse('Welcome to Todo app')
 
-def todos(request):
+def todo(request):
     item = todos.objects.all()
     return render(request, 'todos/index.html', {'todos':item})
