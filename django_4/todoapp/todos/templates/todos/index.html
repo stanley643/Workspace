@@ -7,5 +7,10 @@
 </head>
 <body>
     
+    {% for todo in todos %}
+        {{ todo.title }}: {% if todo.completed==True %}Completed {% else %}Uncompleted
+        
+        {% endif %}
+    {% endfor %}
 </body>
 </html>
