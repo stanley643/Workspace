@@ -8,7 +8,7 @@
 <body>
     
     {% for todo in todos %}
-        {{ todo.title }}: {% if todo.completed==True %}Completed {% else %}Uncompleted
+        {{ todo.title }}: {% if todo.completed %}Completed {% else %}Uncompleted
         
         {% endif %}
     {% endfor %}
