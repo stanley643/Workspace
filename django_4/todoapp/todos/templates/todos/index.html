@@ -6,9 +6,14 @@
     <title>ToDo app </title>
 </head>
 <body>
+        <div style="flex: auto;">
+        <h1>Tasks</h1>
+        <h1>Status</h1>
+        <h1>Comments</h1>
+        </div>
     
     {% for todo in todos %}
-        {{ todo.task }}: {% if todo.completed %}Completed {% else %}Uncompleted{% endif %} - {{ todo.comment}}
+        {{ todo.task }}: {% if todo.completed %}Completed {% else %}Uncompleted{% endif %} - {{ todo.comments}}
         <br>
     {% endfor %}
 </body>
