@@ -6,7 +6,15 @@
     <title>My site</title>
 </head>
 <body>
-    {% for certificate in list %}
+    {% for certificate in certificates %}
+    <div>
+        <h1>{{title.certificate}}</h1>
+        <p>{{description.certificate}}</p>
+        {% if verified.certificate %}verified {{verified_on.cer}}{% else %}Not verified
+        
+        {% endif %}
+    </div>
+    
     
     {% endfor %}
 </body>
