@@ -8,7 +8,7 @@
 <body>
     {% for certificate in certificates %}
     <div>
-        <h1>{{title.certificate}}</h1>
+        {{title.certificate}}
         <p>{{description.certificate}}</p>
         {% if verified.certificate %}verified {{issued_on.certificate}}{% else %}Not verified
         

@@ -8,4 +8,4 @@ def home(request):
 def cert(request):
     items = certificates.objects.all()
 
-    return render(request, 'mysite/index.html', {'certificate':items})
+    return render(request, 'mysite/index.html', {'certificates':items})
