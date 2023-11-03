@@ -5,4 +5,5 @@ class certificate(models.Model):
     title = models.CharField(max_length=250)
     description = models.TextField(max_length=250)
     #image = models.ImageField()
-    issued_on = models.DateTimeField(default=True)
+    issued_on = models.DateTimeField(auto_now=True)
+    verified = models.BooleanField(default=False)
