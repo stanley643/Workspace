@@ -10,7 +10,7 @@
     <div>
         <h1>{{certificate.title}}</h1>
         <p>{{certificate.description}}</p>
-        {% if certificate.verified %}verified {{certificate.issued_on}}{% else %}Not verified
+        {% if certificate.verified %}verified on: {{certificate.issued_on}}{% else %}Not verified
         
         {% endif %}
     </div>
