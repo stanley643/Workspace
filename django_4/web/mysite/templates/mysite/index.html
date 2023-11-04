@@ -8,9 +8,9 @@
 <body>
     {% for certificate in certificates %}
     <div>
-        {{title.certificate}}
-        <p>{{description.certificate}}</p>
-        {% if verified.certificate %}verified {{issued_on.certificate}}{% else %}Not verified
+        <h1>{{certificate.title}}</h1>
+        <p>{{certificate.description}}</p>
+        {% if certificate.verified %}verified {{certificate.issued_on}}{% else %}Not verified
         
         {% endif %}
     </div>
