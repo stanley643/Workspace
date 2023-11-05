@@ -10,6 +10,9 @@ class certificates(models.Model):
 
     class Meta:
         ordering = ['-issued_on']
+        indexes = [
+            models.Index(fields=['issued_on'])
+        ]
 
     def __str__(self):
         return self.title
