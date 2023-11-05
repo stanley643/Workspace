@@ -7,3 +7,6 @@ class certificates(models.Model):
     #image = models.ImageField()
     issued_on = models.DateTimeField(auto_now=False)
     verified = models.BooleanField(default=False)
+
+    def __str__(self):
+        return self.title
