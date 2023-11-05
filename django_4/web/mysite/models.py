@@ -8,5 +8,8 @@ class certificates(models.Model):
     issued_on = models.DateTimeField(auto_now=False)
     verified = models.BooleanField(default=False)
 
+    class Meta:
+        ordering = ['-issued_on']
+
     def __str__(self):
         return self.title
