@@ -5,4 +5,5 @@ proper understanding of:
 	2. urls
 	3. views
 	4. templates
+this are the basics of django. I have full undersatndingof all the above.
 
