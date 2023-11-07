@@ -6,4 +6,8 @@ proper understanding of:
 	3. views
 	4. templates
 this are the basics of django. I have full undersatndingof all the above.
-
+ Chapter 2 - am looking forward to learning:
+	paginations
+	django emails
+	a different way of writting the views 
+	etc
